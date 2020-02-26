@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/apana.uv_inspector/dock_ui.gd" type="Script" id=1]
+
+[node name="UV Inspect" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.09503
+margin_right = 2.09503
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="render_uv_0" type="Button" parent="."]
+anchor_right = 0.5
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -3.0
+margin_bottom = 62.0
+shortcut_in_tooltip = false
+text = "Render UV"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="render_uv_1" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 1.0
+margin_left = 3.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = 62.0
+shortcut_in_tooltip = false
+text = "Render UV2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+margin_left = 5.0
+margin_top = 72.0
+margin_right = -5.0
+margin_bottom = 100.0
+text = "Nothing Selected"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="render_uv_0" to="." method="render_uv_0"]
+[connection signal="pressed" from="render_uv_1" to="." method="render_uv_1"]
